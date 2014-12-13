@@ -9,10 +9,7 @@
 /* Begin PBXBuildFile section */
 		99BA90901A3CE9DD001625B0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 99BA908F1A3CE9DD001625B0 /* main.m */; };
 		99BA90931A3CE9DD001625B0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 99BA90921A3CE9DD001625B0 /* AppDelegate.m */; };
-		99BA90961A3CE9DD001625B0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99BA90951A3CE9DD001625B0 /* ViewController.m */; };
-		99BA90991A3CE9DD001625B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99BA90971A3CE9DD001625B0 /* Main.storyboard */; };
 		99BA909B1A3CE9DD001625B0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99BA909A1A3CE9DD001625B0 /* Images.xcassets */; };
-		99BA909E1A3CE9DD001625B0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99BA909C1A3CE9DD001625B0 /* LaunchScreen.xib */; };
 		99BA90AA1A3CE9DD001625B0 /* TouchTrackerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 99BA90A91A3CE9DD001625B0 /* TouchTrackerTests.m */; };
 /* End PBXBuildFile section */
 
@@ -32,11 +29,7 @@
 		99BA908F1A3CE9DD001625B0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		99BA90911A3CE9DD001625B0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		99BA90921A3CE9DD001625B0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		99BA90941A3CE9DD001625B0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		99BA90951A3CE9DD001625B0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		99BA90981A3CE9DD001625B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		99BA909A1A3CE9DD001625B0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		99BA909D1A3CE9DD001625B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		99BA90A31A3CE9DD001625B0 /* TouchTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TouchTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		99BA90A81A3CE9DD001625B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		99BA90A91A3CE9DD001625B0 /* TouchTrackerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TouchTrackerTests.m; sourceTree = "<group>"; };
@@ -83,11 +76,7 @@
 			children = (
 				99BA90911A3CE9DD001625B0 /* AppDelegate.h */,
 				99BA90921A3CE9DD001625B0 /* AppDelegate.m */,
-				99BA90941A3CE9DD001625B0 /* ViewController.h */,
-				99BA90951A3CE9DD001625B0 /* ViewController.m */,
-				99BA90971A3CE9DD001625B0 /* Main.storyboard */,
 				99BA909A1A3CE9DD001625B0 /* Images.xcassets */,
-				99BA909C1A3CE9DD001625B0 /* LaunchScreen.xib */,
 				99BA908D1A3CE9DD001625B0 /* Supporting Files */,
 			);
 			path = TouchTracker;
@@ -199,8 +188,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				99BA90991A3CE9DD001625B0 /* Main.storyboard in Resources */,
-				99BA909E1A3CE9DD001625B0 /* LaunchScreen.xib in Resources */,
 				99BA909B1A3CE9DD001625B0 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,7 +206,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				99BA90961A3CE9DD001625B0 /* ViewController.m in Sources */,
 				99BA90931A3CE9DD001625B0 /* AppDelegate.m in Sources */,
 				99BA90901A3CE9DD001625B0 /* main.m in Sources */,
 			);
@@ -242,25 +228,6 @@
 			targetProxy = 99BA90A41A3CE9DD001625B0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		99BA90971A3CE9DD001625B0 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				99BA90981A3CE9DD001625B0 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		99BA909C1A3CE9DD001625B0 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				99BA909D1A3CE9DD001625B0 /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		99BA90AB1A3CE9DD001625B0 /* Debug */ = {
