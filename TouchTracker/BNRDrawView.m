@@ -45,6 +45,21 @@
     [[UIColor blackColor] set];
     for (BNRLine *line in self.finishedLines)
     {
+        
+        // make the color of the line change as follows:
+        // 0 < 90 stays black
+        // 90 < 180 goes blue
+        // 180 < 270 goes green
+        // 270 < 360 goes yellow
+        float angleVal = atan2f(line.end.y - line.begin.y, line.end.x - line.end.y);
+        if (0 <= angleVal < (M_PI / 4))
+            [[UIColor blackColor] set];
+        else if ((M_PI / 4) <= angleVal < (M_PI / 2))
+            [[UIColor blueColor] set];
+        else if (((-M_PI / 2) <= angleVal < ((-M_PI) / 4)))
+            [[UIColor greenColor] set];
+        else
+            [[UIColor yellowColor] set];
         [self strokeLine:line];
     }
     
@@ -93,6 +108,8 @@
     {
         NSValue *key = [NSValue valueWithNonretainedObject:t];
         BNRLine *line = self.linesInProgress[key];
+
+        
         
         [self.finishedLines addObject:line];
         [self.linesInProgress removeObjectForKey:key];
